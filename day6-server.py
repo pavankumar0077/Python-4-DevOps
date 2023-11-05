@@ -29,3 +29,4 @@ client_socket.send(data.encode('utf-8'))
 # Close the sockets
 client_socket.close()
 server_socket.close()
+

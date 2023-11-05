@@ -9,8 +9,8 @@ packet = IP(dst=target_ip) / ICMP()
 # Send the packet and receive a response
 response = sr1(packet, timeout=2, verbose=False)
 
-# Check if a response was revieved
+# Check if a response was received
 if response:
     print(f"Received response from {response.src}")
 else:
-    print("No respone received")
+    print("No response received")
